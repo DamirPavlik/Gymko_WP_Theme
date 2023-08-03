@@ -1,7 +1,4 @@
 jQuery('document').ready(function(e) {
-
-    $('.loader-wrapper').fadeOut();
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0){
             $('.section-header').addClass("sticky_section");
@@ -20,16 +17,12 @@ jQuery('document').ready(function(e) {
             }
         }
     })
-
     $('.logo-img img').click(function(){
         window.location.href = 'index.html'
     });
-
     $('.section-logo-img img').click(function(){
         window.location.href = 'index.html'
     });
-
-
     $('svg').click(function(){
         if($('svg').hasClass('active')){
             $('header').addClass('nav-open')
@@ -38,7 +31,6 @@ jQuery('document').ready(function(e) {
             $('.section-logo-img img').attr("src", '/wp-content/themes/gymko/assets/images/Gymko_logo_sa_tekstom-svg.svg')
             $('.main-nav-items a').css("color", "black");
         }
-
         if(!$('svg').hasClass('active')){
             $('header').removeClass('nav-open')
             $('header').removeClass('fill-header')
@@ -47,6 +39,5 @@ jQuery('document').ready(function(e) {
                 $('.section-logo-img img').attr("src", '/wp-content/themes/gymko/assets/images/Gymko_logo_white_sa_tekstom-svg.svg')
             }
         }
-
     })
 })  

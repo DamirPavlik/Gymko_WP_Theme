@@ -21,7 +21,6 @@ jQuery('document').ready(function(e) {
             }
         }
     })
-
     let owl2 = $('.owl-carousel-2')
     owl2.owlCarousel({
         loop:true,
@@ -46,14 +45,12 @@ jQuery('document').ready(function(e) {
             }
         }
     })
-
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
-        // autoWidth:true,
         merge:true,
         responsive:{
             0:{
@@ -67,6 +64,5 @@ jQuery('document').ready(function(e) {
             }
         }
     })
-
 }) 
 

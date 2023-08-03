@@ -5,7 +5,6 @@ jQuery('document').ready(function(e) {
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
-        // autoWidth:true,
         merge:true,
         responsive:{
             0:{

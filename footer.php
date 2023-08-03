@@ -5,8 +5,8 @@
             <h5 class="heading-footer">Gimnazija <span>Mihajlo Pupin</span> Kovačica</h5>
             <p class="align-l">Gimnazija "Mihajlo Pupin" je opšta gimnazija sa nastavom na srpskom i slovačkom jeziku, pored toga, postoji i drugi obrazovni profil - elektrotehničar informacionih tehnologija na srpskom jeziku.</p>
             <div class="social-icons-wrapper">
-                <a href="https://www.facebook.com/gymkoedurs" target="_blank"><img class="icon-social-main" src="http://gymko.local/wp-content/uploads/2023/07/facebook.png" width="15" alt=""></a>
-                <a href="https://www.instagram.com/gimnazijamihajlopupin/" target="_blank"><img class="icon-social-main" src="http://gymko.local/wp-content/uploads/2023/07/instagram.png" width="15" alt=""></a>
+                <a href="https://www.facebook.com/gymkoedurs" target="_blank"><img class="icon-social-main" src="<?= site_url();?>/wp-content/uploads/2023/08/facebook-compressed.png" width="17" alt=""></a>
+                <a href="https://www.instagram.com/gimnazijamihajlopupin/" target="_blank"><img class="icon-social-main" src="<?= site_url();?>/wp-content/uploads/2023/08/instagram-compressed.png" width="17" alt=""></a>
             </div>
         </div>
         <div class="col-md-4">

@@ -1,12 +1,10 @@
 jQuery(document).ready(function($) {
     var $animation_elements = $('[data-animation]');
     var $window = $(window);
-
     function check_if_in_view() {
         var window_height = $window.height();
         var window_top_position = $window.scrollTop();
         var window_bottom_position = (window_top_position + window_height);
-
         $.each($animation_elements, function() {
             var $element = $(this);
             var element_height = $element.outerHeight();
@@ -15,9 +13,7 @@ jQuery(document).ready(function($) {
 
             if ((element_bottom_position >= window_top_position) &&
                 (element_top_position <= window_bottom_position)) {
-
                 $element.addClass('animate__animated ' + $element.attr('data-animation'));
-
                 $element.css({
                     '-webkit-animation-delay':  $element.attr('data-animation-delay') + 's',
                     '-moz-animation-delay':     $element.attr('data-animation-delay') + 's',
@@ -27,16 +23,12 @@ jQuery(document).ready(function($) {
             }
         });
     }
-
     if($(window).width() > 1199) {
         $window.on('scroll resize', check_if_in_view);
         $window.trigger('scroll');
     }
-
     if($(window).width() < 1199) {
         $window.on('scroll', check_if_in_view);
         $window.trigger('scroll');
     }
-
-    // END OF ANIMATIONS
 });

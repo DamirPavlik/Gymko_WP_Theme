@@ -3,19 +3,19 @@
 ?>
 
 <section class="hero">
-    <img src="http://gymko.local/wp-content/uploads/2023/07/hero_shape_big.png" alt="" class="vector">
+    <img src="<?= site_url()?>/wp-content/uploads/2023/07/hero_shape_big.png" alt="" class="vector">
     <div class="container custom_ctn">
         <div class="row">
             <div class="col-md-5 hero-text-box">
                 <h1 class="primary-heading mb-40" data-animation="animate__fadeIn" data-animation-delay="0.2">Dobrodošli u <br><span>Gimnaziju Mihajlo Pupin Kovačica</span></h1>
                 <p class="p-hero mb-50" data-animation="animate__fadeIn" data-animation-delay="0.3">Proširi znanje, razvijaj svoje talente i veštine sa nama!</p>
                 <div class="btn-wrapper-hero" data-animation="animate__fadeIn" data-animation-delay="0.4">
-                <a href="signup.html" class="btn-primary mr_2">Upis</a>
-                <a href="contact.html" class="btn-secondary ">Kontakt &rarr;</a>
+                <a href="/upis/" class="btn-primary mr_2">Upis</a>
+                <a href="/kontakt/" class="btn-secondary ">Kontakt &rarr;</a>
                 </div>
             </div>
             <div class="col-md-7">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/hero-img.webp" alt="Ilustracija Djaka U Školi" class="hero-img" data-animation="animate__fadeIn" data-animation-delay="0.5">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/NOTCOMP-compressed.png" alt="Ilustracija Djaka U Školi" class="hero-img" data-animation="animate__fadeIn" data-animation-delay="0.5">
             </div>
         </div>
     </div>
@@ -27,24 +27,24 @@
         <h2 class="heading-sec">Sve informacije o upisu u gimnaziju</h2>
         <div class="row">
             <div class="col-lg-4">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/book_icon.png" class="signup_icon" alt="ikonica knjige - gymko">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/book_icon.png" class="signup_icon" alt="ikonica knjige - gymko">
                 <h3 class="heading-ter" >Opšti Smer Srpski</h3>
                 <p class="signup-desc" >Opšti smer gimnazije pruža široko obrazovanje učenika u svim oblastima. Podjednak akcenat se stavlja na proširivanje znanja jezika, prirodnih i društvenih nauka, kao i na razvijanje opšte kulture, kreativnosti i kritičkog mišljenja.</p>
             </div>
             <div class="col-lg-4">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/books-stack-of-three-2.png" class="signup_icon" alt="ikonica monitor - gymko" >
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/books-stack-of-three-2.png" class="signup_icon" alt="ikonica monitor - gymko" >
                 <h3 class="heading-ter" >Opšti Smer Slovački</h3>
                 <p class="signup-desc" >Všeobecný smer gymnázia zabezpečuje rovnaké možnosti pre zdokonaľovanie sa v jazykoch, prírodných a spoločenských vedách, k tomu aj rozvíjanie všeobecnej kultúry, kreativity a kritického zmýšľania. </p>
             </div>
             <div class="col-lg-4">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/monitor_icon.png" class="signup_icon" alt="ikonica knjige - gymko" >
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/monitor_icon.png" class="signup_icon" alt="ikonica knjige - gymko" >
                 <h3 class="heading-ter" >IT Smer</h3>
                 <p class="signup-desc no-margin-p" >U okviru svog školovanja učenici će steći praktična znanja iz oblasti modelovanja i razvijanja baza podataka, veštine održavanja i provere sigurnosti informacionih sistema i zaštite podataka.</p>
             </div>
         </div>
     </div>
     <div class="btn-signup-wrapper">
-    <a href="signup.html" class="cta-signup">Upiši se u našu gimnaziju &rarr;</a>
+    <a href="/upis/" class="cta-signup">Upiši se u našu gimnaziju &rarr;</a>
     </div>
 </section>
 
@@ -57,13 +57,13 @@
                     <h2 class="heading-sec" >Pročitaj sve o gimnaziji</h2>
                     <p class="about_txt" >Srednjoškolska obrazovna ustanova koja nosi ime velikana Mihajla Idvorskog Pupina obrazuje i vaspitava generacije učenika više od pola veka. U svom šest decenijskom postojanju se naša škola transformiše prema potrebama sredine prateći najnovije standarde obrazovanja u državi. Gimnazijske smerove učenici upisuju od 1990. godine na srpskom i slovačkom jeziku, a od 2017. godine otvoren je novi smer elektrotehničar informacionih tehnologija.</p>
                     <div class="btn-wrapper-t-c">
-                        <a href="about.html" class="cta-about" >Pročitaj sve o našoj gimnaziji &rarr;</a>
+                        <a href="/o-gimnaziji/" class="cta-about" >Pročitaj sve o našoj gimnaziji &rarr;</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-7">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/about_img.png" alt="Ilustracija - gymko" class="about_img" >
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/about_img-compressed.png" alt="Ilustracija - gymko" class="about_img" >
             </div>
         </div>
     </div>
@@ -76,28 +76,29 @@
         <div class="owl-carousel owl-theme">
           
             <div class="item">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/gallery-img-1.png" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-1.jpg" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
             <div class="item">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/gallery-img-2.png" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-2.jpg" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
+
             </div>
 
             <div class="item">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/gallery-img-3.png" alt="Slika Nastave Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-3.jpg" alt="Slika Nastave Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
             <div class="item">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/gallery-img-4.png" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-4.jpg" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
             <div class="item">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/gallery-img-5.png" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-5.jpg" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
           </div>
           <div class="btn-gallery-wrapper">
-              <a href="gallery.html" class="cta_gallery">Pogledajte našu galeriju slika &rarr;</a>
+              <a href="/galerija/" class="cta_gallery">Pogledajte našu galeriju slika &rarr;</a>
           </div>
     </div>
 </section>
@@ -115,12 +116,12 @@
                         Osim sticanja novih znanja i veština putem redovne nastave, napredovati možeš i kroz brojne saradnje i vannastavne aktivnosti koje ti omogućava naša škola.
                         </p>
                     <div class="btn-wrapper-t-c">    
-                        <a href="staff.html" class="profesori_cta" >Pogledajte naše zaposlene &rarr;</a>
+                        <a href="/zaposleni/" class="profesori_cta" >Pogledajte naše zaposlene &rarr;</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-7">
-                <img src="http://gymko.local/wp-content/uploads/2023/07/profesori_img.png" alt="Ilustracija - gymko" class="profesori_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/07/profesori_img-1.png" alt="Ilustracija - gymko" class="profesori_img">
             </div>
         </div>
     </div>

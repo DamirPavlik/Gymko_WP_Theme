@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content= "width=device-width, maximum-scale=1.0">
     <meta name="viewport" content= "width=device-width, user-scalable=0">
-
     <link rel="shortcut icon" href="/wp-content/themes/gymko/assets/images/gymko_logo_transperent.webp">
-
     <meta
     name="description"
-    content=""
+    content="Gimnazija 'Mihajlo Pupin' je opšta gimnazija sa nastavom na srpskom i slovačkom jeziku, pored toga, postoji i drugi obrazovni profil - elektrotehničar informacionih tehnologija na srpskom jeziku."
     />
-
+    <link rel="preload" href="/wp-content/uploads/2023/07/section_bg.png" as="image"/>
+    <link rel="preload" href="http://gymko.local/wp-content/uploads/2023/07/hero_img.png" as="image"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <?php
@@ -21,9 +20,9 @@
 </head>
 <body>
     
-    <div class="loader-wrapper">
-        <div class="custom-loader"></div>
-    </div>
+<div class="loader-wrapper">
+    <div class="custom-loader"></div>
+</div>
 
 <div class="header-p-relative">
     <header class="section-header ">

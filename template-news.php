@@ -19,7 +19,7 @@ $args = array(
 $latest_posts = new WP_Query($args);
 ?>
 
-<section class="news pt-0" data-animation="animate__fadeIn" data-animation-delay="0.1">
+<section class="news pt-0 pb-100" data-animation="animate__fadeIn" data-animation-delay="0.1">
     <div class="container">
         <div class="row ">
             <?php

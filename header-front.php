@@ -10,8 +10,10 @@
 
     <meta
     name="description"
-    content=""
+    content="Gimnazija 'Mihajlo Pupin' je opšta gimnazija sa nastavom na srpskom i slovačkom jeziku, pored toga, postoji i drugi obrazovni profil - elektrotehničar informacionih tehnologija na srpskom jeziku."
     />
+
+    <link rel="preload" href="/wp-content/uploads/2023/08/bg-blue-compressed-1.png" as="image"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

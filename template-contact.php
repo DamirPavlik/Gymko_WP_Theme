@@ -28,8 +28,8 @@ get_header();
                 </div>
                 <hr>
                 <div class="social-icons-contact">
-                    <a href="https://www.instagram.com/gimnazijamihajlopupin/" target="_blank"><img src="img/icons/instagram.png" alt="instagram gymko - Gimnazija Mihajlo Pupin Kovačica"></a>
-                    <a href="https://www.facebook.com/gymkoedurs/?locale=sr_RS" target="_blank"><img src="img/icons/facebook.png" alt="facebook gymko - Gimnazija Mihajlo Pupin Kovačica"></a>
+                    <a href="https://www.instagram.com/gimnazijamihajlopupin/" target="_blank"><img src="<?= site_url();?>/wp-content/uploads/2023/08/instagram-compressed.png" alt="instagram gymko - Gimnazija Mihajlo Pupin Kovačica"></a>
+                    <a href="https://www.facebook.com/gymkoedurs/?locale=sr_RS" target="_blank"><img src="<?= site_url();?>/wp-content/uploads/2023/08/facebook-compressed.png" alt="facebook gymko - Gimnazija Mihajlo Pupin Kovačica"></a>
                 </div>
             </div>
 

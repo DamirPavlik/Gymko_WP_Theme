@@ -20,12 +20,10 @@ let portofolio_select = (selectInput, data, all, attr) => {
         })
     }
 }
-
 select.addEventListener('change', e=>{
     e.preventDefault();
     portofolio_select(select, portofolios, 'sve', 'data-predmet')
 })
-
 select_rukovodstvo.addEventListener('change', e=>{
     e.preventDefault();
     portofolio_select(select_rukovodstvo, portofolios_rukovdstvo, 'svi', 'data-rukovodstvo')

@@ -93,7 +93,7 @@ Template Name: Zaposleni Template
 
             <div class="col-lg-6" data-animation="animate__fadeIn" data-animation-delay="0.2">
                 <div class="profesori-img-wrapper">
-                    <img src="http://gymko.local/wp-content/uploads/2023/07/illustration1-staff.png" alt="">
+                    <img src="<?= site_url()?>/wp-content/uploads/2023/08/first_zaposleni-compressed.png" alt="">
                 </div>
             </div>
 
@@ -112,7 +112,7 @@ Template Name: Zaposleni Template
             <div class="col-lg-6" data-animation="animate__fadeIn" data-animation-delay="0.2">
 
                 <div class="rukovodstvo-img">
-                    <img src="http://gymko.local/wp-content/uploads/2023/07/illustration2-staff.png" alt="">
+                    <img src="<?= site_url()?>/wp-content/uploads/2023/08/second_zaposleni-compressed.png" alt="">
                 </div>
 
             </div>
