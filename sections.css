@@ -369,7 +369,13 @@ body {
   html .item-blog-wrapper {
     font-size: 180% !important;
     color: #858585;
-    line-height: 24px;
+    line-height: 26px;
+  }
+  @media(max-width: 796px){
+    html .item-blog-wrapper {
+      font-size: 160% !important;
+      line-height: 25px;
+    }
   }
   .item-blog-wrapper img {
     display: block;
@@ -405,23 +411,36 @@ body {
     color: #152136;
     margin-top: 20px;
   }
+  .item-blog-wrapper ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .gymko-blog-single .container{
+    max-width: 900px !important;
+  }
   @media (max-width: 767px) {
     .item-blog-wrapper h1 {
+      font-size: 32px;
     }
   
     .item-blog-wrapper h2 {
+      font-size: 28px;
     }
   
     .item-blog-wrapper h3 {
+      font-size: 24px;
     }
   
     .item-blog-wrapper h4 {
+      font-size: 20px;
     }
   
     .item-blog-wrapper h5 {
+      font-size: 16px;
     }
   
     .item-blog-wrapper h6 {
+      font-size: 15px;
     }
   }
   .mfp-close {
@@ -1718,6 +1737,12 @@ body {
     justify-content: center;
     margin-top: 30px;
   }
+  @media (max-width: 767px) {
+    .pagination{
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  }
   .pagination .page-numbers{
     margin-left: 5px;
     margin-right: 5px;
@@ -1725,7 +1750,13 @@ body {
     padding: 5px 15px;
     color: #456eb5;
     transition: 0.3s all linear;
-
+  }
+  @media (max-width: 767px) {
+    .pagination .page-numbers{
+      padding: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
   .pagination .dots:hover{
     color: #456eb5 !important;
@@ -1742,11 +1773,10 @@ body {
     background: #456eb5;
     border-radius: 5px;
   }
-  .pagination .next{
-
-  }
-  .pagination .prev{
-
+  @media (max-width: 767px) {
+    .pagination .current{
+      padding: 5px 11px;
+    }
   }
   .news .item-wrapper {
     margin: 0 auto;

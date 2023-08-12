@@ -6,6 +6,7 @@
     <h2 class="section_heading"><?php the_title(); ?></h2>
     <p class="section_desc"><?php echo get_the_date(); ?></p>
 </section>
+<div class="gymko-blog-single">
 <article class="container px-3 pb-100 p-md-5">
     <div class="item-blog-wrapper">
     <?php
@@ -18,6 +19,7 @@
     ?>
     </div>
 </article>
+</div>
 
 <?php
     get_footer();
