@@ -4,7 +4,7 @@
 
 <section class="hero-section">
     <h2 class="section_heading"><?php the_title(); ?></h2>
-    <p class="section_desc"><?php echo date_i18n('M d, Y'); ?></p>
+    <p class="section_desc"><?php echo get_the_date(); ?></p>
 </section>
 <article class="container px-3 pb-100 p-md-5">
     <div class="item-blog-wrapper">

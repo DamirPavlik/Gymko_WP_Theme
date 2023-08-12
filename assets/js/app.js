@@ -1,4 +1,5 @@
 jQuery('document').ready(function(e) {
+    $('.loader-wrapper').fadeOut();
     $(window).scroll(function() {
     if ($(this).scrollTop() > 0){
         $('.header').addClass("sticky");

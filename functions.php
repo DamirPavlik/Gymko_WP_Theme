@@ -25,25 +25,24 @@ add_action('wp_enqueue_scripts', 'gymko_register_styles');
 
 function gymko_register_scripts(){
     $version = wp_get_theme()->get( 'Version' );
-    wp_enqueue_script( 'gymko-loader', get_template_directory_uri() . "/assets/js/loader.js", NULL, NULL, true );
+    if(is_front_page()){
+        wp_enqueue_script( 'gymko-app', get_template_directory_uri() . "/assets/js/app.js", NULL, NULL, true );
+    }else{
+        wp_enqueue_script( 'gymko-section', get_template_directory_uri() . "/assets/js/section.js", NULL, NULL, true );
+    }
     wp_enqueue_script( 'gymko-jquery', 'https://code.jquery.com/jquery-3.6.3.min.js', array(), '3.6.3', false);
     wp_enqueue_script( 'gymko-bootstrap',"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", array(), '5.0.2', true );
     wp_enqueue_script( 'gymko-animate', get_template_directory_uri() . "/assets/js/animate.js", NULL, NULL, true );
     wp_enqueue_script( 'gymko-dropdown', get_template_directory_uri() . "/assets/js/dropdown.js", NULL, NULL, true );
-    wp_enqueue_script( 'gymko-app', get_template_directory_uri() . "/assets/js/app.js", NULL, NULL, true );
     wp_enqueue_script( 'gymko-carousel', get_template_directory_uri() . "/assets/owlcarousel/owl.carousel.min.js", NULL, NULL, true );
     // STUDENTS SA MA LOADUVAT AJ NA UCENINICI AJ NA INDEXI
     wp_enqueue_script( 'gymko-students', get_template_directory_uri() . "/assets/js/students.js", NULL, NULL, true );
-    
-    if ( !is_front_page() ) {
-        wp_enqueue_script( 'gymko-section', get_template_directory_uri() . "/assets/js/section.js", NULL, NULL, true );
-    }
- 
-    
+    // if ( !is_front_page() ) {
+    //     wp_enqueue_script( 'gymko-section', get_template_directory_uri() . "/assets/js/section.js", NULL, NULL, true );
+    // }
     if ( is_page( 'Zaposleni' ) ) {
         wp_enqueue_script( 'gymko-profesori', get_template_directory_uri() . "/assets/js/profesori.js", NULL, NULL, true );
     }
-
     if(is_page( 'Dokumenti' )){
         wp_enqueue_script( 'gymko-dokumenti', get_template_directory_uri() . "/assets/js/documents.js", NULL, NULL, true );
     }
@@ -82,7 +81,7 @@ function custom_contact_form_handler() {
                 exit;
             }
 
-            $to = 'damir.pavlik@gmail.com'; 
+            $to = 'office@gymko.edu.rs'; 
             $headers = array('Content-Type: text/html; charset=UTF-8');
             $body = "Name: $name<br>Email: $email<br>Subject: $subject<br>Message: $message";
             $sent = wp_mail($to, $subject, $body, $headers);

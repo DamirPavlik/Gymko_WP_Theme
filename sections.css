@@ -1711,6 +1711,43 @@ body {
       max-width: 100%;
     }
   }
+  .pagination{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .pagination .page-numbers{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #456eb5;
+    transition: 0.3s all linear;
+
+  }
+  .pagination .dots:hover{
+    color: #456eb5 !important;
+    background: none !important;
+  }
+  .pagination .page-numbers:hover{
+    color: #fff;
+    background: #456eb5;
+    border-radius: 5px;
+  }
+  .pagination .current{
+    padding: 5px 15px;
+    color: #fff;
+    background: #456eb5;
+    border-radius: 5px;
+  }
+  .pagination .next{
+
+  }
+  .pagination .prev{
+
+  }
   .news .item-wrapper {
     margin: 0 auto;
     width: 85%;
