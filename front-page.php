@@ -3,7 +3,7 @@
 ?>
 
 <section class="hero">
-    <img src="<?= site_url()?>/wp-content/uploads/2023/07/hero_shape_big.png" alt="" class="vector">
+    <img src="<?= site_url()?>/wp-content/uploads/2023/08/hero_shape_big.png" alt="" class="vector">
     <div class="container custom_ctn">
         <div class="row">
             <div class="col-md-5 hero-text-box">
@@ -27,17 +27,17 @@
         <h2 class="heading-sec">Sve informacije o upisu u gimnaziju</h2>
         <div class="row">
             <div class="col-lg-4">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/book_icon.png" class="signup_icon" alt="ikonica knjige - gymko">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/book_icon.png" class="signup_icon" alt="ikonica knjige - gymko">
                 <h3 class="heading-ter" >Opšti Smer Srpski</h3>
                 <p class="signup-desc" >Opšti smer gimnazije pruža široko obrazovanje učenika u svim oblastima. Podjednak akcenat se stavlja na proširivanje znanja jezika, prirodnih i društvenih nauka, kao i na razvijanje opšte kulture, kreativnosti i kritičkog mišljenja.</p>
             </div>
             <div class="col-lg-4">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/books-stack-of-three-2.png" class="signup_icon" alt="ikonica monitor - gymko" >
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/books-stack-of-three-2.png" class="signup_icon" alt="ikonica monitor - gymko" >
                 <h3 class="heading-ter" >Opšti Smer Slovački</h3>
                 <p class="signup-desc" >Všeobecný smer gymnázia zabezpečuje rovnaké možnosti pre zdokonaľovanie sa v jazykoch, prírodných a spoločenských vedách, k tomu aj rozvíjanie všeobecnej kultúry, kreativity a kritického zmýšľania. </p>
             </div>
             <div class="col-lg-4">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/monitor_icon.png" class="signup_icon" alt="ikonica knjige - gymko" >
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/monitor_icon.png" class="signup_icon" alt="ikonica knjige - gymko" >
                 <h3 class="heading-ter" >IT Smer</h3>
                 <p class="signup-desc no-margin-p" >U okviru svog školovanja učenici će steći praktična znanja iz oblasti modelovanja i razvijanja baza podataka, veštine održavanja i provere sigurnosti informacionih sistema i zaštite podataka.</p>
             </div>
@@ -76,24 +76,24 @@
         <div class="owl-carousel owl-theme">
           
             <div class="item">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-1.jpg" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/gallery-img-1.jpg" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
             <div class="item">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-2.jpg" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/gallery-img-2.jpg" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
 
             </div>
 
             <div class="item">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-3.jpg" alt="Slika Nastave Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/gallery-img-3.jpg" alt="Slika Nastave Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
             <div class="item">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-4.jpg" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/gallery-img-4.jpg" alt="Slika Fizičkog u Gimnaziji Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
             <div class="item">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/gallery-img-5.jpg" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/gallery-img-5.jpg" alt="Slika Škole Gimnazija Mihajlo Pupin Kovačica" class="gallery_img">
             </div>
 
           </div>
@@ -121,7 +121,7 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <img src="<?= site_url()?>/wp-content/uploads/2023/07/profesori_img-1.png" alt="Ilustracija - gymko" class="profesori_img">
+                <img src="<?= site_url()?>/wp-content/uploads/2023/08/profesori_img.png" alt="Ilustracija - gymko" class="profesori_img">
             </div>
         </div>
     </div>

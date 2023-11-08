@@ -96,10 +96,6 @@ Template Name: Zaposleni Template
                     <img src="<?= site_url()?>/wp-content/uploads/2023/08/first_zaposleni-compressed.png" alt="">
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
 </section>
@@ -112,7 +108,7 @@ Template Name: Zaposleni Template
             <div class="col-lg-6" data-animation="animate__fadeIn" data-animation-delay="0.2">
 
                 <div class="rukovodstvo-img">
-                    <img src="<?= site_url()?>/wp-content/uploads/2023/08/second_zaposleni-compressed.png" alt="">
+                    <img src="<?= site_url()?>/wp-content/uploads/2023/08/second_zaposleni-compressed2.png" alt="">
                 </div>
 
             </div>

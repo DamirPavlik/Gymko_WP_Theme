@@ -6,7 +6,7 @@
     <meta name="viewport" content= "width=device-width, maximum-scale=1.0">
     <meta name="viewport" content= "width=device-width, user-scalable=0">
 
-    <link rel="shortcut icon" href="/wp-content/themes/gymko/assets/images/gymko_logo_transperent.webp">
+    <link rel="shortcut icon" href="/wp-content/uploads/2023/08/gymko_logo_transperent-compressed.png">
 
     <meta
     name="description"
@@ -32,7 +32,7 @@
         <div class="container custom_ctn">
             <nav class="nav">
                 <div class="logo-img">
-                    <img src="/wp-content/themes/gymko/assets/images/Gymko_logo_sa_tekstom-svg.svg" alt="">
+                    <img src="/wp-content/uploads/2023/08/Gymko_logo_sa_tekstom-svg-svg-1-compressed-1.png" alt="">
                 </div>
 
                 <div class="main-nav-items">

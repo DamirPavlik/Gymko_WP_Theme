@@ -29,7 +29,7 @@
         <div class="container custom_ctn">
             <nav class="section-nav">
                 <div class="section-logo-img">
-                    <a href="/"><img src="http://gymko.edu.rs/wp-content/uploads/2023/08/Gymko_logo_sa_tekstom-svg-svg-1-compressed-1-1.png" alt=""></a>
+                    <a href="/"><img src="/wp-content/themes/gymko/assets/images/Gymko_logo_white_sa_tekstom-svg.svg" alt=""></a>
                 </div>
 
                 <div class="section-main-nav-items">
