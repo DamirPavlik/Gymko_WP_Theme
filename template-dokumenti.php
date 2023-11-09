@@ -34,11 +34,13 @@ $dokumenti = get_field('dokumenti');
                                 ?>
                                     <div class="<?= $idx !== count($dokument['upload_dokumenta']) - 1 ? 'item-wrapper' : 'item-wrapper-last'; ?>">
                                         <p><?= esc_html($doc['naziv_dokumenta']); ?></p>
-                                        <?php if($doc['dokument']['url']) { ?>
+                                        <?php if ($doc['dokument']['url']){ ?>
                                             <a href="<?= esc_url($doc['dokument']['url']); ?>">Preuzmite Sadržaj</a>
-                                        <?php }else { ?>
+                                        <?php } else if ($doc['link_stranice'] !== ""){ ?>
+                                            <a href="<?=$doc['link_stranice']?>" target="_blank">Link Stranice</a>
+                                        <?php } else {?>
                                             <p>Link trenutno nije dostupan</p>
-                                        <?php }?>
+                                         <?php } ?>   
                                     </div>
                                 <?php
                                 }
