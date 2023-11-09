@@ -1,1 +1,1 @@
-# Gymko_WP_Theme
+# Gimnazija Mihajlo Pupin Website
