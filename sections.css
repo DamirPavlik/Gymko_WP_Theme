@@ -2054,3 +2054,6 @@ body {
     padding-bottom: 13px;
   }
 }
+.mfp-container {
+  cursor: pointer;
+}

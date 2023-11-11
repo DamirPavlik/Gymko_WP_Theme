@@ -3,20 +3,15 @@
     Template Name: Novosti Template
 */
 get_header();
-?>
-<section class="hero-section">
-    <h2 class="section_heading"><?php the_title(); ?></h2>
-    <p class="section_desc"><?php echo get_field('section_description'); ?></p>
-</section>
+get_template_part('template-parts/content', 'hero');
 
-<?php
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 
 $args = array(
     'post_type' => 'post',          
     'orderby' => 'date',            
     'order' => 'DESC',
-    'posts_per_page' => 3, 
+    'posts_per_page' => 6, 
     'paged' => $paged, 
 );
 

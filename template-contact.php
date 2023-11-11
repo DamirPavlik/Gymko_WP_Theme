@@ -4,13 +4,8 @@ Template Name: Kontakt Template
 */
 
 get_header(); 
-
+get_template_part('template-parts/content', 'hero');
 ?>
-
-<section class="hero-section">
-    <h2 class="section_heading"><?php the_title(); ?></h2>
-    <p class="section_desc"><?php echo get_field('section_description'); ?></p>
-</section>
 
 <section class="form">
     <div class="container">
@@ -34,7 +29,7 @@ get_header();
             </div>
 
             <div class="col-lg-9">
-                <h3 class="form-heading" data-animation="animate__fadeIn" data-animation-delay="0.15">Ostavite Poruku</h3>
+                <h3 class="form-heading" data-animation="animate__fadeIn" data-animation-delay="0.15">Pošaljite Poruku</h3>
                 <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post" data-animation="animate__fadeIn" data-animation-delay="0.15">
                     <div class="row">
                         <div class="col-lg-6">

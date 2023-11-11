@@ -3,26 +3,26 @@
 Template Name: Gallery Template
 */
 get_header(); 
+get_template_part('template-parts/content', 'hero');
+$idx = 0;
+$gallery_images = get_field('gallery_images');
 ?>
 
-<?php
-    $idx = 0
-?>
-
-<section class="hero-section">
-    <h2 class="section_heading"><?php the_title(); ?></h2>
-    <p class="section_desc"><?php echo get_field('section_description'); ?></p>
-</section>
-
-<?php $gallery_images = get_field('gallery_images');
+<?php 
 if ($gallery_images) {
-    echo '<div class="container gallery-imgs">';
-    echo '<div class="row">';
-    foreach ($gallery_images as $image) {
-        echo '<div class="col-md-4 mb-4"><a class="image-popup" href="' . $image['url'] . '"><img id="'. $idx++ .'" src="' . $image['url'] . '" alt="' . $image['alt'] . '"  /></a></div>';
-    }
-    echo '</div>';
-    echo '</div>';
+    ?>
+        <div class="container gallery-imgs">
+            <div class="row">
+                <?php
+                    foreach ($gallery_images as $image) {
+                        ?>
+                            <div class="col-md-4 mb-4"><a class="image-popup" href="<?= $image['url'] ?>"><img id="<?= $idx++ ?>" src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>"  /></a></div>
+                        <?php
+                    }
+                ?>
+            </div>
+        </div>
+    <?php
 }
 ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: HTML ONLY Template
+Template Name: Success Template
 */
 
 session_start();

@@ -3,12 +3,8 @@
 Template Name: Zaposleni Template
 */
     get_header(); 
+    get_template_part('template-parts/content', 'hero');
 ?>
-
-<section class="hero-section">
-    <h2 class="section_heading"><?php the_title(); ?></h2>
-    <p class="section_desc"><?php echo get_field('section_description'); ?></p>
-</section>
 
 <section class="profesori-section">
     <div class="container">
