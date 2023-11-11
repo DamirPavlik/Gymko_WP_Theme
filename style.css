@@ -774,7 +774,7 @@ html .item-blog-wrapper {
 }
 .about {
   background-image: url("/wp-content/uploads/2023/08/bg-blue-compressed-1.png");
-
+  
   background-size: cover;
   padding: 25rem 0;
 }
@@ -924,6 +924,9 @@ html .item-blog-wrapper {
   box-shadow: 0px 15px 13px 1px rgba(0, 0, 0, 0.27);
   border-radius: 15px;
   transition: 0.3s all linear;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 @media (max-width: 991px) {
   .news .item-wrapper {
@@ -940,6 +943,9 @@ html .item-blog-wrapper {
   width: 100%;
   margin-bottom: 2.5rem;
   height: auto;
+  border-radius: 10px;
+  flex: 1;
+  object-fit: cover;
 }
 .news .item-wrapper .news_heading {
   text-align: center;
@@ -981,6 +987,7 @@ html .item-blog-wrapper {
   padding: 0.9rem 0;
   border: 1px solid #456eb5;
   transition: 0.2s all linear;
+  border-radius: 6px;
 }
 .news .item-wrapper .news_btn:hover {
   background-color: #375891;

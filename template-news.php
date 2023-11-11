@@ -35,19 +35,13 @@ $latest_posts = new WP_Query($args);
                      <div class="col-lg-4 mb-50-md-20">
                         <div class="item-wrapper">
                             <?php the_post_thumbnail('full', array('class' => 'news_img')); ?>
-                            <?php
-                            $title = get_the_title();
-                            if (strlen($title) > 20) {
-                                $title = substr($title, 0, 20) . '...';
-                            }
-                            ?>
-                            <h2 class="news_heading"><?php echo $title; ?></h2>
+                            <h2 class="news_heading"><?= get_the_title(); ?></h2>
                             <?php
                             $content = get_the_content();
                             $content = wp_trim_words($content, 10, '...');
                             ?>
                             <p class="news_date"><?php echo get_the_date(); ?></p>
-                            <p class="news_desc"><?php echo $content; ?> ...</p>
+                            <p class="news_desc"><?php echo $content; ?></p>
                             <a href="<?php the_permalink(); ?>" class="news_btn">Pročitaj sve</a>
                         </div>
                     </div>

@@ -100,6 +100,14 @@ function custom_contact_form_handler() {
     }
 }
 
+function enable_wpauto_posts($content){
+    if (is_single()) {
+        $content = wpautop($content);
+    }
+    return $content;
+}
+add_filter('the_content', 'enable_wpauto_posts');
+
 add_action('admin_post_nopriv_custom_contact_form', 'custom_contact_form_handler');
 add_action('admin_post_custom_contact_form', 'custom_contact_form_handler');
 

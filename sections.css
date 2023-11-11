@@ -23,6 +23,10 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* SECTION ZACIATOK */
 .section-header {
     transition: 0.3s all ease-in;
@@ -375,72 +379,6 @@ body {
     html .item-blog-wrapper {
       font-size: 160% !important;
       line-height: 25px;
-    }
-  }
-  .item-blog-wrapper img {
-    display: block;
-    margin: 20px 0;
-  }
-  .item-blog-wrapper h1 {
-    font-size: 42px;
-    color: #152136;
-    margin-top: 20px;
-  }
-  .item-blog-wrapper h2 {
-    font-size: 36px;
-    color: #152136;
-    margin-top: 20px;
-  }
-  .item-blog-wrapper h3 {
-    font-size: 30px;
-    color: #152136;
-    margin-top: 20px;
-  }
-  .item-blog-wrapper h4 {
-    font-size: 24px;
-    color: #152136;
-    margin-top: 20px;
-  }
-  .item-blog-wrapper h5 {
-    font-size: 20px;
-    color: #152136;
-    margin-top: 20px;
-  }
-  .item-blog-wrapper h6 {
-    font-size: 16px;
-    color: #152136;
-    margin-top: 20px;
-  }
-  .item-blog-wrapper ul{
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .gymko-blog-single .container{
-    max-width: 900px !important;
-  }
-  @media (max-width: 767px) {
-    .item-blog-wrapper h1 {
-      font-size: 32px;
-    }
-  
-    .item-blog-wrapper h2 {
-      font-size: 28px;
-    }
-  
-    .item-blog-wrapper h3 {
-      font-size: 24px;
-    }
-  
-    .item-blog-wrapper h4 {
-      font-size: 20px;
-    }
-  
-    .item-blog-wrapper h5 {
-      font-size: 16px;
-    }
-  
-    .item-blog-wrapper h6 {
-      font-size: 15px;
     }
   }
   .mfp-close {
@@ -1789,6 +1727,9 @@ body {
     box-shadow: 0px 15px 13px 1px rgba(0, 0, 0, 0.27);
     border-radius: 15px;
     transition: 0.3s all linear;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   @media (max-width: 991px) {
     .news .item-wrapper {
@@ -1805,6 +1746,9 @@ body {
     width: 100%;
     margin-bottom: 2.5rem;
     height: auto;
+    border-radius: 10px;
+    flex: 1;
+    object-fit: cover;
   }
   .news .item-wrapper .news_heading {
     text-align: center;
@@ -1852,6 +1796,7 @@ body {
     padding: 0.9rem 0;
     border: 1px solid #456eb5;
     transition: 0.2s all linear;
+    border-radius: 6px;
   }
   .news .item-wrapper .news_btn:hover {
     background-color: #375891;
@@ -1884,3 +1829,228 @@ body {
     }
   }
   /* POTIAVTO */
+.gymko-single-intro {
+  position: relative;
+}
+.gymko-single-intro .container {
+  max-width: 1030px;
+}
+.gymko-single-intro .gymko-single-intro-heading {
+  padding-top: 150px;
+  color: #fff;
+  font-weight: 800;
+  line-height: 80px;
+  font-size: 70px;
+}
+.gymko-single-intro .gymko-single-intro-date {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+.gymko-single-intro .gymko-single-intro-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -999;
+}
+.gymko-single-blog .container {
+  max-width: 1030px;
+}
+.gymko-single-blog img {
+  display: block;
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.gymko-single-blog h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+.gymko-single-blog h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+.gymko-single-blog h3 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+.gymko-single-blog h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+.gymko-single-blog h5 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.gymko-single-blog h6 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.gymko-single-blog p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+.gymko-single-blog a {
+  color: #456EB5;
+}
+.gymko-single-blog ol {
+  margin-bottom: 40px;
+}
+.gymko-single-blog ol li {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+.gymko-single-blog ul{
+  margin-bottom: 40px;
+}
+.gymko-single-blog ul li {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+.gymko-single-blog blockquote {
+  border-left: 20px solid #456EB5;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 10px 0 10px 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.gymko-single-blog blockquote p {
+  margin-bottom: 0;
+}
+.gymko-single-blog .single-featured-image {
+  margin-bottom: 64px;
+}
+.random-post-wrapper .last-post-img {
+  margin-bottom: 20px !important;
+  padding: 20px;
+  border-radius: 30px;
+  width: 100%;
+  flex: 1;
+  object-fit: cover;
+}
+.random-post-wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.random-post-wrapper p {
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.random-post-wrapper a {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #456EB5;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+@media(max-width: 796px) {
+  .gymko-single-intro .gymko-single-intro-heading {
+    padding-top: 90px;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+  .gymko-single-intro .gymko-single-intro-date {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 50px;
+  }
+  .gymko-single-blog img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .gymko-single-blog h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .gymko-single-blog h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .gymko-single-blog h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .gymko-single-blog h4 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .gymko-single-blog h5 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .gymko-single-blog h6 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .gymko-single-blog p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 26px;
+  }
+
+  .gymko-single-blog ol li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .gymko-single-blog ul li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  .gymko-single-blog blockquote {
+    border-left: 20px solid #456EB5;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 40px;
+  }
+  .random-post-wrapper {
+    padding: 20px;
+  }
+  .random-post-wrapper .last-post-img {
+    padding: 0 !important;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  .random-post-wrapper a {
+    font-size: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
