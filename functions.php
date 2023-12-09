@@ -13,7 +13,7 @@ function gymko_register_styles(){
     if(is_front_page()){
         wp_enqueue_style( 'gymko-css', get_template_directory_uri() . "/style.css", array('gymko-bootstrap'), $version, 'all' );
     }else{
-        wp_enqueue_style( 'gymko-sectioncss', get_template_directory_uri() . "/sections.css", array('gymko-bootstrap'), $version, 'all' );
+        wp_enqueue_style( 'gymko-sectioncss', get_template_directory_uri() . "/assets/styles/sections.css", array('gymko-bootstrap'), $version, 'all' );
     }
     wp_enqueue_style( 'gymko-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", array(), '5.0.2', 'all' );
     wp_enqueue_style( 'gymko-owlcarousel', get_template_directory_uri() . "/assets/owlcarousel/assets/owl.carousel.min.css", array(), $version ,'all' );

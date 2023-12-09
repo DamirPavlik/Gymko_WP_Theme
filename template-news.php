@@ -22,7 +22,6 @@ $latest_posts = new WP_Query($args);
     <div class="container">
         <div class="row ">
             <?php
-            // Check if there are posts
             if ($latest_posts->have_posts()) {
                 while ($latest_posts->have_posts()) {
                     $latest_posts->the_post();
