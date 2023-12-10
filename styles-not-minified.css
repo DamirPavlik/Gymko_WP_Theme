@@ -1388,3 +1388,17 @@ ul
     text-align: center;
     font-size: 20px;
 }
+.bg-primary {
+    background: #456eb5;
+}
+.end-10 {
+    right: 10px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .top-10 {
+        top: 10px;
+    }
+}
