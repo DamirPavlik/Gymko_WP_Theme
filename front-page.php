@@ -156,7 +156,7 @@ $latest_posts = new WP_Query($args);
                         $content = wp_trim_words($content, 10, '...');
                         ?>
                         <p class="news_date"><?php echo get_the_date(); ?></p>
-                        <p class="news_desc"><?php echo $content; ?> ...</p>
+                        <p class="news_desc"><?php echo $content; ?></p>
                         <a href="<?php the_permalink(); ?>" class="news_btn">Pročitaj sve</a>
                     </div>
                 </div>

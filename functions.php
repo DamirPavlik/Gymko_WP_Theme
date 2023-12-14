@@ -1,19 +1,19 @@
 <?php
 
-function gymko_theme_support(){
+function gymko_theme_support() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
 }
 
 add_action( 'after_setup_theme', 'gymko_theme_support' );
 
-function gymko_register_styles(){
+function gymko_register_styles() {
     $version = wp_get_theme()->get( 'Version' );
     wp_enqueue_style( 'gymko-owlcarousel', get_template_directory_uri() . "/assets/owlcarousel/assets/owl.carousel.min.css", array(), $version ,'all' );
     wp_enqueue_style( 'gymko-owlcarousel-default', get_template_directory_uri() . "/assets/owlcarousel/assets/owl.theme.default.min.css", array(),$version, 'all' );
-    if(is_front_page()){
+    if (is_front_page()) {
         wp_enqueue_style( 'gymko-css', get_template_directory_uri() . "/style.css", array('gymko-bootstrap'), $version, 'all' );
-    }else{
+    } else {
         wp_enqueue_style( 'gymko-sectioncss', get_template_directory_uri() . "/assets/styles/sections.css", array('gymko-bootstrap'), $version, 'all' );
     }
     wp_enqueue_style( 'gymko-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", array(), '5.0.2', 'all' );
@@ -22,28 +22,25 @@ function gymko_register_styles(){
 
 add_action('wp_enqueue_scripts', 'gymko_register_styles');
 
-function gymko_register_scripts(){
+function gymko_register_scripts() {
     $version = wp_get_theme()->get( 'Version' );
+    wp_enqueue_script( 'gymko-jquery', 'https://code.jquery.com/jquery-3.6.3.min.js', array(), '3.6.3', false);
     wp_enqueue_script( 'gymko-carousel', get_template_directory_uri() . "/assets/owlcarousel/owl.carousel.min.js", NULL, NULL, true );
-    if(is_front_page()){
+    wp_enqueue_script( 'gymko-students', get_template_directory_uri() . "/assets/js/students.js", NULL, NULL, true );
+    if (is_front_page()){
         wp_enqueue_script( 'gymko-app', get_template_directory_uri() . "/assets/js/app.js", NULL, NULL, true );
         wp_enqueue_script( 'gymko-gallery', get_template_directory_uri() . "/assets/js/gallery.js", NULL, NULL, true );
-    }else{
+    } else {
         wp_enqueue_script( 'gymko-section', get_template_directory_uri() . "/assets/js/section.js", NULL, NULL, true );
     }
-    wp_enqueue_script( 'gymko-jquery', 'https://code.jquery.com/jquery-3.6.3.min.js', array(), '3.6.3', false);
     wp_enqueue_script( 'gymko-bootstrap',"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", array(), '5.0.2', true );
     wp_enqueue_script( 'gymko-animate', get_template_directory_uri() . "/assets/js/animate.js", NULL, NULL, true );
     wp_enqueue_script( 'gymko-dropdown', get_template_directory_uri() . "/assets/js/dropdown.js", NULL, NULL, true );
     // STUDENTS SA MA LOADUVAT AJ NA UCENINICI AJ NA INDEXI
-    wp_enqueue_script( 'gymko-students', get_template_directory_uri() . "/assets/js/students.js", NULL, NULL, true );
-    // if ( !is_front_page() ) {
-    //     wp_enqueue_script( 'gymko-section', get_template_directory_uri() . "/assets/js/section.js", NULL, NULL, true );
-    // }
-    if ( is_page( 'Zaposleni' ) ) {
+    if (is_page( 'Zaposleni' )) {
         wp_enqueue_script( 'gymko-profesori', get_template_directory_uri() . "/assets/js/profesori.js", NULL, NULL, true );
     }
-    if(is_page( 'Dokumenti' )){
+    if (is_page( 'Dokumenti' )) {
         wp_enqueue_script( 'gymko-dokumenti', get_template_directory_uri() . "/assets/js/documents.js", NULL, NULL, true );
     }
 }   
@@ -109,7 +106,7 @@ if (function_exists('acf_add_options_page')) {
     acf_add_options_page();
 }
 
-function enable_wpauto_posts($content){
+function enable_wpauto_posts($content) {
     if (is_single()) {
         $content = wpautop($content);
     }
