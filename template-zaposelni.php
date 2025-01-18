@@ -59,6 +59,7 @@ Template Name: Zaposleni Template
                             <option value="upravljanje">Upravljanje Projektima</option>
                             <option value="preduzetnistvo">Preduzetništvo</option>
                             <option value="servisi">Računarske Mreže i Internet Servisi</option>
+                            <option value="religije-civilizacije">Religije i Civilizacije</option>
                             <option value="pit">Primenjene informacione Tehnologije</option>
                         </select>
                     </div>
@@ -123,7 +124,7 @@ Template Name: Zaposleni Template
                         <option value="racunovodja">Računovođa</option>
                         <option value="psiholog">Stručni Saradnik i Školski Psiholog</option>
                         <option value="skolski-odbor">Školski Odbor</option>
-                        <option value="clanovi">Članovi</option>
+                        <!-- <option value="clanovi">Članovi</option> -->
                         <option value="savet-roditelja">Savet Roditelja</option>
                     </select>
                 </div>

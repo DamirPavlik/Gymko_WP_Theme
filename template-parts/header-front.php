@@ -42,12 +42,14 @@
                             <div class="dropdown-menu-custom" data-add-class>
                                 <a href="/o-gimnaziji" class="dropdown-item">O gimnaziji</a>
                                 <a href="/uspesni-ucenici" class="dropdown-item">Uspešni Učenici</a>
-                                <a href="/dokumenti" class="no-margin dropdown-item">Dokumenti</a>
+                                <!-- <a href="/dokumenti" class="no-margin dropdown-item">Dokumenti</a> -->
+                                <a href="/galerija" class="no-margin dropdown-item">Galerija</a>
                             </div>
                         </div>
                         <li><a href="/zaposleni" class="">Zaposleni</a></li>
                         <li><a href="/novosti" class="">Novosti</a></li>
-                        <li><a href="/galerija" class="">Galerija</a></li>
+                        <li><a href="/dokumenti" class="">Dokumenti</a></li>
+                        <!-- <li><a href="/galerija" class="">Galerija</a></li> -->
                         <li><a href="/upis" class="">Upis</a></li> 
                         <li><a href="/kontakt" class="">Kontakt</a></li>
                     </ul>
